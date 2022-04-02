@@ -1,0 +1,35 @@
+
+<div style="background-color: bisque;">
+<p>parent4 works!</p>
+<H1>jskjjjjjj</H1>
+
+
+
+
+
+
+
+
+
+<input  type="text" [(ngModel)]="title">
+
+Set Color : 
+    
+    <select [(ngModel)]="myComboColor">
+<option>Red</option>
+<option>Blue</option>
+<option>Green</option>
+</select>
+
+
+
+<app-child4 [sendmydata]="title"></app-child4>
+
+<input type="button" value="save">
+
+
+<app-child5 [receiveMyData] = "myName5"></app-child5>
+
+<app-child6 [myVal] = "myName" [myColor] = "myComboColor"></app-child6>
+
+</div>
